@@ -1,0 +1,26 @@
+@import "../App/colors";
+
+.panel {
+  .panel-head {
+    display: flex;
+    .panel__title {
+      font-weight: 300;
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+    }
+    .panel__subtitle {
+      font-weight: lighter;
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+    }
+  }
+  .panel__content {
+    background-color: $grey-dark;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 16px;
+  }
+}

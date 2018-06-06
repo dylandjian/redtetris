@@ -1,0 +1,25 @@
+@import "../App/colors";
+
+.logo {
+  font-size: 180px;
+  font-weight: bold;
+  font-style: italic;
+  //   background: url("../assets/images/marble-texture.jpg");
+  //   background-color: lightseagreen;
+  //   background-size: cover;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-background-clip: text;
+  color: $grey-light;
+
+  .logo--red {
+    color: $red;
+    overflow: hidden;
+  }
+}
+
+.logo--small {
+  font-size: 30px;
+  .logo--red {
+    margin-right: 10px;
+  }
+}

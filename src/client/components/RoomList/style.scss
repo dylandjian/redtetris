@@ -1,0 +1,17 @@
+@import "../App/colors";
+
+.roomlist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  .room-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.roomlist--no-room {
+  text-align: center;
+  letter-spacing: 1px;
+  color: $grey-light;
+}

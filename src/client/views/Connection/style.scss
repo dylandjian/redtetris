@@ -1,0 +1,33 @@
+@import "../../components/App/colors.scss";
+
+.connection-view {
+  display: flex;
+
+  .bloc {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .bloc--vh-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logo--red {
+  color: $red;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 230px;
+  font-weight: bold;
+  font-style: italic;
+  //   background: url("../assets/images/marble-texture.jpg");
+  //   background-color: lightseagreen;
+  //   background-size: cover;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-background-clip: text;
+  color: $grey-light;
+}

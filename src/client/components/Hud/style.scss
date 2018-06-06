@@ -1,0 +1,40 @@
+@import "../App/colors";
+@import "../App/fonts";
+
+.hud-wrapper {
+  width: 30%;
+  .hud {
+    width: 100%;
+    border-radius: 4px;
+    background-color: $grey-dark;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  .hud__item {
+    margin-bottom: 24px;
+  }
+  .hud__item:last-child {
+    margin-bottom: 0px;
+  }
+  .hud__title {
+    font-size: $font--normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0px;
+  }
+  .hud__value {
+    text-align: center;
+    background-color: $grey;
+    padding: 8px;
+    font-weight: 600;
+    font-size: $font--big;
+  }
+  .piece-visualizer {
+    display: inline-block;
+    .piece {
+      background-color: $grey;
+    }
+  }
+}

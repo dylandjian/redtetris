@@ -1,0 +1,74 @@
+@import "../App/colors";
+@import "../App/fonts";
+
+.player-item {
+  padding: 10px 15px;
+  background-color: $grey;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 100;
+  height: 60px;
+  .player-item__username {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: $font--big;
+    letter-spacing: 2px;
+  }
+  .player-item__score {
+    width: 20%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  .score {
+    display: flex;
+    .icon {
+      width: 28px;
+    }
+    .score__icon {
+      margin-right: 10px;
+    }
+    .score__icon,
+    .score__value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .star {
+    display: flex;
+    .icon {
+      width: 21px;
+    }
+    .star__icon {
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+    .star__icon,
+    .star__value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .player-item__button {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .player-item__not-ready {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.player-item--current {
+  border: 1px solid $red;
+}

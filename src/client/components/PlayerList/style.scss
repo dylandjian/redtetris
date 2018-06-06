@@ -1,0 +1,7 @@
+.player-list {
+  margin: 0;
+  padding: 0;
+  .player-item:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../App/colors";
+@import "../App/fonts";
+
+$cell-size: 13px;
+
+.shadow-grid {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .board {
+    border: 5px solid $grey-dark;
+    border-top: none;
+  }
+  .grid__cell {
+    width: $cell-size;
+    height: $cell-size;
+  }
+}
+
+.shadow-grid .board {
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+.board-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .board-name {
+    width: 140px;
+    background-color: $grey-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font--big;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    word-break: break-word;
+  }
+}

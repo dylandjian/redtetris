@@ -1,0 +1,96 @@
+@import "../App/colors";
+$cell-size: 30px;
+
+.board-container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: inline-block;
+  border: 16px solid $grey-dark;
+  border-radius: 4px;
+  margin: 0 auto;
+  justify-content: center;
+  outline: none;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+}
+
+.grid__line {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid__cell {
+  width: $cell-size;
+  height: $cell-size;
+  // border-radius: 2px;
+  // margin: 1px;
+}
+
+@mixin set-border($color) {
+  $border-size: 2px;
+  $border-style: solid;
+  border-top: $border-size $border-style lighten($color, 10%);
+  border-left: $border-size $border-style lighten($color, 10%);
+  border-right: $border-size $border-style darken($color, 10%);
+  border-bottom: $border-size $border-style darken($color, 10%);
+}
+
+.piece {
+  background-color: lightgrey;
+}
+
+.piece--stick {
+  $color: #3498db;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--square {
+  $color: #f1c40f;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--pyramid {
+  $color: #9b59b6;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--right-snake {
+  $color: #2ecc71;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--left-snake {
+  $color: #8e44ad;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--gamma {
+  $color: #2980b9;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--alpha {
+  $color: #e74c3c;
+  background-color: $color;
+  @include set-border($color);
+}
+
+.piece--indestructible {
+  $color: #424242;
+  background-color: $color;
+  @include set-border($color);
+}

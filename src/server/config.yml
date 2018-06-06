@@ -1,0 +1,10 @@
+development:
+  server:
+    address: "http://localhost"
+    port: 8081
+    secret: '1FFA752776726FA77712A2585A8A57DEE79F9E0C8E97BBD10899A4D51948027B'
+production:
+  server:
+    address: "http://localhost"
+    port: 8081
+    secret: '1FFA752776726FA77712A2585A8A57DEE79F9E0C8E97BBD10899A4D51948027B'

@@ -1,0 +1,33 @@
+@import "../App/colors";
+@import "../App/fonts";
+
+.input-btn-grp {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  & > * {
+    height: 100%;
+    vertical-align: middle;
+  }
+  .input--text {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    width: 60%;
+  }
+  a.button,
+  .button {
+    width: 40%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.input-error {
+  font-size: $font--small;
+  margin-bottom: 20px;
+  color: $red;
+  background-color: $grey-dark;
+  padding: 10px;
+  border-radius: 4px;
+}

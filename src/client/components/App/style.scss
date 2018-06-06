@@ -1,0 +1,72 @@
+@import "fonts";
+@import "colors";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+}
+
+div,
+span,
+a,
+input {
+  box-sizing: border-box;
+}
+
+// BUTTON
+a.button,
+.button {
+  background: linear-gradient(to bottom, $red-light, $red);
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: none;
+  transition-duration: 100ms;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  // STATE STYLE
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .button__icon {
+    margin-right: 10px;
+  }
+}
+.button.button--grey {
+  background: $grey-dark;
+}
+.button--icon {
+  //   padding-left: 5px;
+}
+
+.button--disabled,
+.button--disabled:hover {
+  transform: none;
+  background: grey;
+  cursor: default;  
+}
+
+.icon {
+  width: 25px;
+  margin-left: 10px;
+}
+
+// INPUT
+.input-label {
+  font-weight: 400;
+}
+.input--text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-left: 5px;
+}

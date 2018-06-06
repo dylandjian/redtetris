@@ -1,0 +1,39 @@
+@import "../App/fonts";
+@import "../App/colors";
+
+.room-item {
+  padding: 10px 15px;
+  background-color: $grey;
+  color: white;
+  display: flex;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 100;
+  .room-item__game-name {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: $font--big;
+    text-transform: uppercase;
+    width: 50%;
+  }
+  .room-item__game-status {
+    color: #fff;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .room-item__player-count {
+    color: #fff;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  .room-item__action {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

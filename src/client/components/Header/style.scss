@@ -1,0 +1,49 @@
+@import "../App/colors";
+@import "../App/fonts";
+
+.header {
+  width: 100vw;
+  height: 90px;
+  background-color: $grey-dark;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .header__left,
+  .header__middle,
+  .header__right {
+    width: 32%;
+  }
+  .header__middle,
+  .header__right {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-size: $font--big;
+    letter-spacing: 2px;
+  }
+
+  .header__middle {
+    justify-content: center;
+  }
+}
+
+.room-name {
+  display: flex;
+  flex-direction: column;
+  .room-name__title {
+    font-size: $font--small;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: $grey-light;
+  }
+  .room-name__title,
+  .room-name__value {
+    text-align: center;
+  }
+}
+
+.icon--margin-right {
+  margin-right: 10px;
+}
