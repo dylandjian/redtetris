@@ -17,6 +17,7 @@ class Manager {
 
   connection = () => {
     this.io.on("connection", socket => {
+      console.log(this.io)
       this.players[socket.id] = new Player(socket)
       this.notification = new Notification(this.io, socket)
 
@@ -177,12 +178,14 @@ class Manager {
           },
           constants.COUNTDOWN_DELAY,
           constants.COUNTDOWN_REPETITIONS
-        ).then(() => {
-          room.game.updateStatus("In game")
-          this.io.to(room.hashName).emit("updateGame", room.game)
-          this.startGame(player.socket)
-          this.updateRoom(room.hashName)
-        }).catch(err => err)
+        )
+          .then(() => {
+            room.game.updateStatus("In game")
+            this.io.to(room.hashName).emit("updateGame", room.game)
+            this.startGame(player.socket)
+            this.updateRoom(room.hashName)
+          })
+          .catch(err => err)
       })
     } else this.io.to(room.hashName).emit("updateGame", room.game)
   }
