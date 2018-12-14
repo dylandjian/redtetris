@@ -14,7 +14,7 @@
     "srv-prod": "export NODE_ENV=production && nodemon --exec npm run babel-node -- src/server/main.js",
     "srv-prod-public": "yarn srv-prod --host 0.0.0.0 --public 0.0.0.0:8080 --disable-host-check --port 8081",
     "prod": "yarn clear && yarn client-prod && yarn srv-prod",
-    "start":"yarn clear && yarn client-prod && yarn srv-prod",
+    "start": "yarn clear && yarn client-prod && yarn srv-prod",
     "test": "mocha --require @babel/register --require jsdom-global/register --require ignore-styles --exit --recursive ./test",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text yarn test",
     "coverage-html": "cross-env NODE_ENV=test nyc --reporter=html yarn test"
@@ -71,9 +71,7 @@
     "redux-persist": "^5.9.1",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.7",
-    "socket.io": "^2.0.3"
-  },
-  "devDependencies": {
+    "socket.io": "^2.0.3",
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.40",
     "@babel/node": "^7.0.0-beta.40",
@@ -108,5 +106,6 @@
     "webpack-dev-server": "^2.6.1",
     "webpack-hot-middleware": "^2.19.1",
     "webpack-merge": "^4.1.0"
-  }
+  },
+  "devDependencies": {}
 }
