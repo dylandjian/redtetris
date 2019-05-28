@@ -2147,7 +2147,7 @@ var _socket = _interopRequireDefault(__webpack_require__(294));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var socket = (0, _socket.default)("http://localhost:8080/");
+var socket = (0, _socket.default)("https://redtetris42.herokuapp.com");
 exports.socket = socket;
 ;
 
