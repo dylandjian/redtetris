@@ -2147,8 +2147,7 @@ var _socket = _interopRequireDefault(__webpack_require__(294));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var socket = (0, _socket.default)("http://localhost:8081/"); //  const socket = io("http://167.99.33.85:8081/")
-
+var socket = (0, _socket.default)("http://localhost:8080/");
 exports.socket = socket;
 ;
 
