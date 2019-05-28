@@ -19,6 +19,9 @@
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text yarn test",
     "coverage-html": "cross-env NODE_ENV=test nyc --reporter=html yarn test"
   },
+  "engines": {
+    "node": ">=4.0.0 <=9.0.0"
+  },
   "nyc": {
     "extensions": [
       ".js",
