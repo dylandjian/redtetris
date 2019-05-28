@@ -6,7 +6,7 @@ import path from "path"
 
 import Manager from "./controller/manager"
 
-const port = 8081
+const port = process.env.PORT || 8081
 const env = process.env.NODE_ENV
 
 const initApp = () => {
