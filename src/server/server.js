@@ -6,7 +6,6 @@ import path from "path"
 
 import Manager from "./controller/manager"
 
-// const config = yaml.load(path.join(__dirname, "config.yml"))
 const port = 8081
 const env = process.env.NODE_ENV
 
